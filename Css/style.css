@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+/**
+*
+* Testing
+*
+**/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  width: 10px;
+  background-color: #ffffff;
+  border-left: 0 solid #ffffff;
+  border-right: 0 solid #ffffff;
+  margin-block: 3px;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5d54a3;
+  width: 15% !important;
+  height: 15% !important;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar:hover {
+  cursor: pointer;
+}
+
+::-moz-selection {
+  /* code for firefox */
+  color: #ffffff;
+  background-color: #5d54a3;
+}
+
+::selection {
+  /* code for firefox */
+  color: #ffffff;
+  background-color: #5d54a3;
+}
+
+/* end variables */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /*small*/
+  /* tablet */
+  /* Medium */
+  /* desktop  */
+}
+@media (min-width: 577px) {
+  .container {
+    width: 550px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*! start variables*/
+/*! end variables*/
+/*! start Global Rules*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  line-height: 1.15;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+}
+
+/*! end Global Rules*/
+/*! start code */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*! start Attribution */
+  /*! end Attribution */
+}
+.app header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+  position: relative;
+  padding: 40px 0;
+}
+.app header .logo {
+  max-width: 400px;
+  margin-right: 40px;
+}
+.app header .burger,
+.app header .close {
+  display: none;
+}
+.app header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+  position: relative;
+}
+.app header nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style-type: none;
+}
+.app header nav .nav-links .nav-link {
+  cursor: pointer;
+}
+.app header nav .nav-links .nav-link a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #696969;
+  font-size: 16px;
+  font-weight: 500;
+}
+.app header nav .nav-links .nav-link a span {
+  padding-right: 12px;
+}
+.app header nav .nav-links .nav-link a:hover {
+  color: #141414;
+}
+.app header nav .nav-links .nav-link a img:nth-child(2) {
+  display: none;
+}
+.app header nav .nav-links .nav-link .down-list {
+  display: none;
+}
+.app header nav .nav-links .active a img:nth-child(2) {
+  display: block;
+}
+.app header nav .nav-links .active a img:nth-child(3) {
+  display: none;
+}
+.app header nav .nav-links .active .down-list {
+  display: block;
+  margin: 20px auto auto;
+  position: absolute;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2);
+}
+.app header nav .nav-links .active .down-list .down-link {
+  list-style-type: none;
+  padding: 8px 0;
+}
+.app header nav .nav-links .active .down-list .down-link a img {
+  padding-right: 4px;
+}
+.app header nav .nav-links .nav-link:nth-child(1) .down-list {
+  width: 160px;
+  left: -60px;
+}
+.app header nav .nav-links .nav-link:nth-child(2) .down-list {
+  width: 120px;
+  left: 110px;
+}
+.app header nav .registration {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.app header nav .registration button {
+  outline-style: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #696969;
+  font-size: 14px;
+  font-weight: 700;
+}
+.app header nav .registration button:hover {
+  color: #141414;
+}
+.app header nav .registration button:last-child {
+  padding: 12px 20px;
+  border: 1px solid #141414;
+  border-radius: 14px;
+}
+.app main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+  max-width: 1200px;
+  margin: 90px auto 0;
+  align-items: end;
+}
+.app main picture {
+  grid-area: 1/2;
+  width: 380px;
+  height: -webkit-fill-available;
+}
+.app main picture img {
+  width: -webkit-fill-available;
+}
+.app main picture .mobile {
+  display: none;
+}
+.app main section {
+  grid-area: 1/1;
+}
+.app main section h1 {
+  color: #141414;
+  font-size: 60px;
+  font-weight: 700;
+}
+.app main section p {
+  color: #696969;
+  padding: 40px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.app main section button {
+  border: 1px solid #141414;
+  outline-style: none;
+  border-radius: 12px;
+  background-color: #141414;
+  color: #ffffff;
+  padding: 18px 28px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+}
+.app main section button:hover {
+  background-color: transparent;
+  color: #141414;
+  box-shadow: 0rem 0rem 1rem #696969;
+}
+.app main section button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px #696969;
+}
+.app main section .clients {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+  padding-top: 40px;
+}
+@media (max-width: 998px) {
+  .app main {
+    margin: 100px auto 0;
+    grid-column-gap: 20px;
+  }
+  .app main picture {
+    width: 300px;
+  }
+}
+.app .attribution {
+  text-align: center;
+  margin-top: 80px;
+  padding: 20px 0;
+  color: #141414;
+}
+.app .attribution a {
+  font-size: smaller;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #696969;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.app .attribution a:hover::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  content: "\f0a9";
+  font-size: 12px;
+  padding: 0 8px;
+}
+@media (max-width: 380px) {
+  .app .attribution {
+    margin-top: 60px;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  .app header .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .app header nav {
+    display: none;
+  }
+  .app .nav-column .burger {
+    display: none;
+  }
+  .app .nav-column .close {
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .app .nav-column nav {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateX(0%);
+    position: fixed;
+    gap: 30px;
+    top: 0;
+    right: 0;
+    width: 65vw;
+    height: 100vh;
+    padding: 100px 40px;
+    z-index: 1;
+    background-color: #ffffff;
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2);
+  }
+  .app .nav-column nav .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .app .nav-column nav .nav-links .active .down-list {
+    display: block;
+    margin: 8px;
+    position: relative;
+    padding: 8px;
+    box-shadow: none;
+  }
+  .app .nav-column nav .nav-links .active .down-list .down-link {
+    list-style-type: none;
+    padding: 8px 0;
+  }
+  .app .nav-column nav .nav-links .active .down-list .down-link a img {
+    padding-left: 4px;
+  }
+  .app .nav-column nav .nav-links .nav-link:first-child .down-list,
+  .app .nav-column nav .nav-links .nav-link:nth-child(2) .down-list {
+    width: auto;
+    left: 0px;
+  }
+  .app .nav-column .registration {
+    flex-direction: column;
+    align-items: stretch;
+    width: -webkit-fill-available;
+  }
+  .app main {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-row-gap: 60px;
+    margin: 20px auto;
+    align-items: center;
+    justify-items: center;
+  }
+  .app main picture {
+    grid-area: 1/1;
+    position: absolute;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fill-available;
+    top: 115px;
+  }
+  .app main picture .mobile {
+    display: block;
+    width: 100%;
+    height: 50%;
+  }
+  .app main picture .desktop {
+    display: none;
+  }
+  .app main section {
+    grid-area: 2/1;
+    text-align: center;
+  }
+}
+@media (max-width: 420px) {
+  .app main {
+    grid-row-gap: 0px;
+  }
+  .app main section h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+
+/*! end code *//*# sourceMappingURL=style.css.map */

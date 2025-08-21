@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add a Favicon to your Site -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <!--Font Awesone Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!--Main Template Css File-->
+    <link rel="stylesheet" href="Css/style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="app">
+          <header>
+            <div class="logo">
+              <img src="images/logo.svg" alt="logo" />
+            </div>
+            <div class="burger">
+              <img src="images/icon-menu.svg" alt="hamburger-icon menu-open" />
+            </div>
+            <div class="close">
+              <img
+                src="images/icon-close-menu.svg"
+                alt="times-icon menu-close"
+              />
+            </div>
+            <nav>
+              <ul class="nav-links">
+                <li class="nav-link">
+                  <a href="#" aria-label="features" class="dropdown"
+                    ><span>Features</span>
+                    <img
+                      src="images/icon-arrow-up.svg"
+                      alt="arrow up"
+                      class="arrow-up"
+                    />
+                    <img
+                      src="images/icon-arrow-down.svg"
+                      alt="arrow down"
+                      class="arrow-down"
+                    />
+                  </a>
+                  <ul class="down-list">
+                    <li class="down-link">
+                      <a href="#" aria-label="todo-list">
+                        <img src="images/icon-todo.svg" alt="todo-list icon" />
+                        <span>Todo List</span>
+                      </a>
+                    </li>
+                    <li class="down-link">
+                      <a href="#" aria-label="calender">
+                        <img
+                          src="images/icon-calendar.svg"
+                          alt="calender icon"
+                        />
+                        <span>Calender</span>
+                      </a>
+                    </li>
+                    <li class="down-link">
+                      <a href="#" aria-label="reminders">
+                        <img src="images/icon-reminders.svg" alt="bell icon" />
+                        <span>Reminders</span>
+                      </a>
+                    </li>
+                    <li class="down-link">
+                      <a href="#" aria-label="planning">
+                        <img src="images/icon-planning.svg" alt="clock icon" />
+                        <span>Planning</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-link">
+                  <a href="#" aria-label="company" class="dropdown">
+                    <span>Company</span>
+                    <img
+                      src="images/icon-arrow-up.svg"
+                      alt="arrow up"
+                      class="arrow-up"
+                    />
+                    <img
+                      src="images/icon-arrow-down.svg"
+                      alt="arrow down"
+                      class="arrow-down"
+                    />
+                  </a>
+                  <ul class="down-list">
+                    <li class="down-link">
+                      <a href="#" aria-label="history">History</a>
+                    </li>
+                    <li class="down-link">
+                      <a href="#" aria-label="our-team">Our Team</a>
+                    </li>
+                    <li class="down-link">
+                      <a href="#" aria-label="blog">Blog</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-link">
+                  <a href="#" aria-label="careers">Careers</a>
+                </li>
+                <li class="nav-link">
+                  <a href="#" aria-label="about">About</a>
+                </li>
+              </ul>
+              <div class="registration">
+                <button>Login</button>
+                <button>Register</button>
+              </div>
+            </nav>
+          </header>
+          <main>
+            <picture>
+              <img
+                class="desktop"
+                src="images/image-hero-desktop.png"
+                alt="hero image"
+              />
+              <img
+                class="mobile"
+                src="images/image-hero-mobile.png"
+                alt="hero image"
+              />
+            </picture>
+            <section class="text-content">
+              <h1>Make remote work</h1>
+              <p>
+                Get your team in sync, no matter your location. Streamline
+                processes, create team rituals, and watch productivity soar.
+              </p>
+              <button>Learn more</button>
+              <div class="clients">
+                <img src="images/client-databiz.svg" alt="databiz logo" />
+                <img src="images/client-audiophile.svg" alt="audiophile" />
+                <img src="images/client-meet.svg" alt="meet" />
+                <img src="images/client-maker.svg" alt="maker" />
+              </div>
+            </section>
+          </main>
+          <!-- start Attribution -->
+          <div class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">Maher Elmair</a>.
+          </div>
+          <!-- end Attribution -->
+        </div>
+      </div>
+    </div>
+    <!--Main Template Java Script File-->
+    <script src="Scripts/app.js"></script>
+  </body>
+</html>
